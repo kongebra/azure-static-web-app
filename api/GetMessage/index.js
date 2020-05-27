@@ -1,11 +1,12 @@
 module.exports = async function (context, req) {
   context.res = {
     body: {
-      title: "Lorem Ipsums",
-      text: "Hello from the API",
+      title: 'Lorem Ipsums',
+      test: process.env.TEST_STRING,
+      text: 'Hello from the API',
     },
     headers: {
-      lorem: "ipsum",
+      lorem: 'ipsum',
     },
   };
 };
